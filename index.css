@@ -3,12 +3,14 @@
 }
 
 .custom-background-color {
-    background-color: white;
-    color: #B44C43;
+    background-color: rgb(224, 255, 193);
+    color: #286d00;
 }
 
 .header{
-    padding-left: 10px;
+    display:flex;
+    float: left;
+    padding-left: 2%;
 }
 
 
@@ -22,10 +24,12 @@ body {
 
 /* Add a white background color to the top navigation */
 .topnav {
-    display: block;
+    padding-top: 1%;
+    padding-left: 3%;
+    display:flex;
     overflow: hidden;
-    float: right;
-    padding-right: 10px;
+    float: left;
+    
     
     
 }
@@ -34,7 +38,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #B44C43;
+    color: #286d00;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
@@ -44,14 +48,14 @@ body {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #B44C43;
+    background-color: #286d00;
     color: white;
 }
 
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color: #B44C43;
+    background-color:#286d00;
     color: white;
 }
 
@@ -73,10 +77,12 @@ body {
 
 #home {
     width: 100%;
-    height: 90vh;
+    height: 110vh;
     background: url('background.jpg') no-repeat center fixed;
     background-size: cover;
 }
+
+
 
 /*register button*/
 .register {
@@ -87,10 +93,36 @@ body {
     padding-left: 40px;
     font-family: "Mate SC";
     font-size: 20px;
-    background-color: #B44C43;
+    background-color: #286d00;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    margin-right:16px
+}
+
+.learn-more {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: "Mate SC";
+    font-size: 20px;
+    background-color: #286d00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right:16px
+}
+
+.register:hover {
+    color: white;
+    background-color: #26252d;
+}
+
+.learn-more:hover {
+    color: #26252d;
+    background-color: rgb(224, 255, 193);
 }
 
 /*edit the text on background picture*/
@@ -98,7 +130,7 @@ body {
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
@@ -106,18 +138,18 @@ body {
 
 #fc {
     text-align: center;
-    text-shadow: 3px 3px #B44C43;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 48px;
+    text-shadow: 3px 3px #286d00;
+    /* background-color: rgba(0, 95, 13, 0.7); */
+    font-size: 59px;
     color: white;
 }
 
 #text {
     text-align: center;
-    text-shadow: 3px 3px #B44C43;
+    text-shadow: 3px 3px #286d00;
     font-style: bold 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 28px;
+    /* background-color: rgba(0, 95, 13, 0.7); */
+    font-size: 30px;
     color: white;
  
 }
@@ -205,7 +237,7 @@ input {
 }
 
 #about-us h2, #our-mission h2 {
-    color: #B44C43;
+    color: #286d00;
     font-family: 'Mate SC', serif;
     text-align: center;
 }
@@ -236,5 +268,5 @@ footer a {
 }
 
 footer a:hover {
-    color: #B44C43;
+    color: #286d00;
 }

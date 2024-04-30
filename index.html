@@ -7,71 +7,117 @@
     
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mate+SC">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body class="heading custom-background-color">
-    <!--Top Bar-->
-    <!-- <div class="w3-bar w3-light-grey">
-        <a href="#" class="w3-bar-item w3-button">Home</a>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <div class="w3-dropdown-hover">
-          <button class="w3-button">Dropdown</button>
-          <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">Link 1</a>
-            <a href="#" class="w3-bar-item w3-button">Link 2</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-          </div>
-        </div>
-      </div>  -->
+    <!--Navigation Bar-->
+    <div class=" header custom-background-color">
+        <h1> FreeCycling!</h1>
+    </div>
 
-      <div class="topnav custom-background-color">
+    <div class="topnav custom-background-color">
         <a class="active" href="#home">Home</a>
          <a href="#Our Story">Our Story</a>
-        <a href="#Items">Items</a>
         <a href="#get-started">Get Started</a>
         <a href="#news">News</a>
-        <!-- Integrate the new dropdown here -->
-        <div class="w3-dropdown-hover">
-            <button class="w3-button">Dropdown</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <a href="#" class="w3-bar-item w3-button">Link 1</a>
-                <a href="#" class="w3-bar-item w3-button">Link 2</a>
-                <a href="#" class="w3-bar-item w3-button">Link 3</a>
-            </div>
-        </div>
-        <!-- End of new dropdown -->
-        <a href="#members">Members</a>
         <a href="#Take Action">Take Action</a>
-        <a herf="#Login">Login</a>
-        <a class ="search" href="#search"><img src="search.png" alt="search" width="30" height="30"></a>  
+
+        <!-- <a class ="search" href="#search"><img src="search.png" alt="search" width="30" height="30"></a>   -->
     </div>
 
-    <div class=" header custom-background-color">
-        <h1> FreeCycling</h1>
-    </div>
+    
 
     <img src="background.jpg" alt="background" id="background">
 
     <div class="center">
         <h1 id="fc">#Freecycle Movement</h1>
         <p id="text">It's time to reuse, reduce and recycle</p>
-        <button id="trigger-modal" class="register" >Register</button>
+        <div class="button-hub">
+            <button id="trigger-modal" class="register" >Register</button>
+            <button id="trigger-modal" class="learn-more" >Learn More</button>
+        </div>
+        
 
     </div>
 
-    <!--Central -->
 
     
-    <div class=" header custom-background-color">
-        <h1> FreeCycling</h1>
+
+    <div id="about-us-container">
+        <!--About Us and Our mission-->
+        <div id="about-us">
+            <h2>About Us</h2>
+            <p>We are a grassroots & entirely nonprofit movement of people who are giving and getting stuff for free in their own Towns. It's all about reuse and keeping good stuff out of landfills. With our free membership anyone can also set up their own, smaller personal Friends Circle for gifting and lending of items.</p>
+            <p style = "color: #B44C43;">Read more > </p>
+        </div>
+    
+        <div id="our-mission">
+            <h2>Our Mission</h2>
+            <p>Our mission is to build a worldwide sharing movement that reduces waste, saves precious resources, and eases the burden on our landfills. We want to enable our members to benefit from the strength of a larger community and contribute to a more sustainable future. </p>
+            <p style = "color: #B44C43;">Read more > </p>
+        </div>
     </div>
+    
 
-    <!--Information Container-->
+    <footer>
+        <!--Footer Content-->
+        <h3>Follow us on social media</h3>
+        <a href="#Instagram" target="_blank" >
+            <img src="Instagram.png" alt="Instagram" width="30" height="30">
+        </a>
+        <a href="facebook" target="_blank">
+            <img src="Facebook.png" alt="Facebook" width="30" height="30">
+        </a>
+        <a href="snapchat" target="_blank">
+            <img src="snapchat.png" alt="Snapchat" width="30" height="30">
+        </a>
+    </footer>
+    
+    <div id="myModal" class="modal">
 
-    <!--Footer-->
+        <!-- Modal content -->
+        <div id="form-ct" class="modal-content custom-background-color">
+            <span class="close" title="Close">&times;</span>
+            <h2>Register a New Book Group</h2>
+
+            <form>
+                <div id="user-details">
+                    <h3>User Details</h3>
+                    <label for="fname">Given name:</label><br>
+                    <input type="text" id="given" name="fname"><br>
+                    <label for="lname">Surname:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="username">Username:</label><br>
+                    <input type="text" id="username" name="username"><br>
+                    <label for="password">Password:</label><br>
+                    <input type="text" id="password" name="password"><br>
+                </div>
+
+                <div id="address-details">
+                    <h3>Addresses</h3>
+                    <label for="hAddress">Home Address:</label><br>
+                    <input type="text" id="hAddress" name="hAddress"><br>
+                    <label for="wAddress">Work Address:</label><br>
+                    <input type="text" id="wAddress" name="wAddress"><br>
+                </div>
+
+                <div  id="contact-details">
+                    <h3>Contacts</h3>
+                    <label for="mobileNumber">Mobile Number:</label><br>
+                    <input type="text" id="mobileNumber" name="mobileNumber"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br><br>
+                    <input type="button" value="Submit" class="register custom-background-color"><br>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+
 
 </body>
+
+<script src="script.js"></script>
 
 </html>
