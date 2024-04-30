@@ -1,0 +1,240 @@
+.custom-color {
+    color: #26252d;
+}
+
+.custom-background-color {
+    background-color: white;
+    color: #B44C43;
+}
+
+.header{
+    padding-left: 10px;
+}
+
+
+/*Set font for the entire page*/
+body {
+    font-family: "Mate SC";
+    margin: 0px 0px 0px 0px;
+    display: block;
+}
+
+
+/* Add a white background color to the top navigation */
+.topnav {
+    display: block;
+    overflow: hidden;
+    float: right;
+    padding-right: 10px;
+    
+    
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #B44C43;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #B44C43;
+    color: white;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #B44C43;
+    color: white;
+}
+
+.topnav a.search {
+    background-color: white;
+    color:  white;
+}
+
+
+/*edit background picture*/
+#background {
+    display: block;
+    background: no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    opacity: 95%;
+}
+
+#home {
+    width: 100%;
+    height: 90vh;
+    background: url('background.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+/*register button*/
+.register {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-family: "Mate SC";
+    font-size: 20px;
+    background-color: #B44C43;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*edit the text on background picture*/
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#fc {
+    text-align: center;
+    text-shadow: 3px 3px #B44C43;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 48px;
+    color: white;
+}
+
+#text {
+    text-align: center;
+    text-shadow: 3px 3px #B44C43;
+    font-style: bold 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 28px;
+    color: white;
+ 
+}
+
+
+p {
+    font-size: 20px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #B44C43;
+    background-color: rgba(226, 246, 255, 0.4);
+    
+}
+
+.myModal {
+    background-color: white;
+}
+
+
+/* Modal Content */
+.modal-content {
+    border: 1px solid #888;
+    width: 50%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Change colour when hovered over */
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 8px 0;
+    background-color: whitesmoke;
+}
+
+
+
+/* Styling for 'about-us-container', 'about-us', and 'our-mission' sections */
+#about-us-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 20px;
+    height: 30vh;
+}
+
+#about-us, #our-mission {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+#about-us h2, #our-mission h2 {
+    color: #B44C43;
+    font-family: 'Mate SC', serif;
+    text-align: center;
+}
+
+#about-us p, #our-mission p {
+    color: #555;
+    line-height: 1.5;
+    font-size: large;
+    position: relative;
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #B44C43;
+}
