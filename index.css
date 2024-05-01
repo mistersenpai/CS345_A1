@@ -2,21 +2,29 @@
     color: #26252d;
 }
 
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .custom-background-color {
-    background-color: rgb(224, 255, 193);
-    color: #286d00;
+    background-color: rgb(255, 255, 255);
+    color: #246100;
 }
 
 .header{
+    font-size: 20px;
     display:flex;
     float: left;
     padding-left: 2%;
+    padding-bottom: 30px;
 }
 
 
 /*Set font for the entire page*/
 body {
-    font-family: "Mate SC";
+    font-family: lato-regular;
     margin: 0px 0px 0px 0px;
     display: block;
 }
@@ -24,44 +32,61 @@ body {
 
 /* Add a white background color to the top navigation */
 .topnav {
-    padding-top: 1%;
+    padding-top: 1.2%;
     padding-left: 3%;
     display:flex;
     overflow: hidden;
     float: left;
-    
-    
-    
+
 }
 
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #286d00;
+    color: #246100;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 26px;
+}
+
+/* Add a white background color to the top navigation */
+.signin {
+    padding-top: 1.2%;
+    padding-left: 3%;
+    display:flex;
+    overflow: hidden;
+    float: right;
+}
+
+/* Style the links inside the navigation bar */
+.signin a {
+    float: right;
+    color: #246100;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.signin a.active {
+    background-color:#246100;
+    color: white;
 }
 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #286d00;
+    background-color: #246100;
     color: white;
 }
 
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color:#286d00;
+    background-color:#246100;
     color: white;
-}
-
-.topnav a.search {
-    background-color: white;
-    color:  white;
 }
 
 
@@ -71,7 +96,7 @@ body {
     background: no-repeat center fixed;
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: 80%;
     opacity: 95%;
 }
 
@@ -85,42 +110,23 @@ body {
 
 
 /*register button*/
-.register {
+.register, .learn-more {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 40px;
     padding-left: 40px;
-    font-family: "Mate SC";
-    font-size: 20px;
-    background-color: #286d00;
+    font-family: lato-regular;
+    font-size: 30px;
+    background-color: #246100;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     margin-right:16px
 }
 
-.learn-more {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 40px;
-    padding-left: 40px;
-    font-family: "Mate SC";
-    font-size: 20px;
-    background-color: #286d00;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right:16px
-}
 
-.register:hover {
-    color: white;
-    background-color: #26252d;
-}
-
-.learn-more:hover {
+.register:hover, .learn-more:hover {
     color: #26252d;
     background-color: rgb(224, 255, 193);
 }
@@ -138,19 +144,18 @@ body {
 
 #fc {
     text-align: center;
-    text-shadow: 3px 3px #286d00;
-    /* background-color: rgba(0, 95, 13, 0.7); */
-    font-size: 59px;
+    text-shadow: 3px 3px #246100;
+    font-size: 70px;
     color: white;
 }
 
 #text {
     text-align: center;
-    text-shadow: 3px 3px #286d00;
+    text-shadow: 3px 3px #246100;
     font-style: bold 20px;
-    /* background-color: rgba(0, 95, 13, 0.7); */
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    
  
 }
 
@@ -227,7 +232,17 @@ input {
     justify-content: space-between;
     background-color: #f7f7f7;
     padding: 20px;
-    height: 30vh;
+    padding-left: 10%;
+    padding-right: 10%;
+    /* height: 500px; */
+}
+
+#blank {
+    height:500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 50%; */
 }
 
 #about-us, #our-mission {
@@ -237,19 +252,40 @@ input {
 }
 
 #about-us h2, #our-mission h2 {
-    color: #286d00;
-    font-family: 'Mate SC', serif;
+    font-size: 40px;
+    color: #246100;
+    font-family: lato-regular;
     text-align: center;
 }
 
 #about-us p, #our-mission p {
     color: #555;
     line-height: 1.5;
-    font-size: large;
+    font-size: 30px;
     position: relative;
     display: block;
+    padding: 5%;
 }
 
+#read-more-box {
+    display:flex;
+    justify-content:left;
+    background-color: #f7f7f7;
+
+
+}
+
+#read-more-box p {
+    display: block;
+    color: #555;
+    line-height: 1.5;
+    font-size: 30px;
+    position:relative;
+
+
+    /* padding: 10%; */
+    /* float: left; */
+}
 /* Footer styles */
 footer {
     background-color: #333;
@@ -263,10 +299,12 @@ footer h3 {
 }
 
 footer a {
+    font-size: large;
     margin: 0 10px;
     text-decoration: none;
+    color: white;
 }
 
 footer a:hover {
-    color: #286d00;
+    color: #246100;
 }

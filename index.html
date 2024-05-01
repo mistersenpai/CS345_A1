@@ -6,36 +6,46 @@
     <title>FreeCycling Program</title>
     
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mate+SC">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Rubik&display=swap" rel="stylesheet">
+
+        
 </head>
 
 <body class="heading custom-background-color">
     <!--Navigation Bar-->
     <div class=" header custom-background-color">
         <h1> FreeCycling!</h1>
+
     </div>
 
     <div class="topnav custom-background-color">
         <a class="active" href="#home">Home</a>
-         <a href="#Our Story">Our Story</a>
+        <a href="#Our Story">Our Story</a>
         <a href="#get-started">Get Started</a>
         <a href="#news">News</a>
         <a href="#Take Action">Take Action</a>
 
-        <!-- <a class ="search" href="#search"><img src="search.png" alt="search" width="30" height="30"></a>   -->
     </div>
+
+    <div class="signin custom-background-color">
+        <a class="active" href="#signup">Sign Up</a>
+         <a href="#login">Log In</a>
+    </div>
+
+
 
     
 
     <img src="background.jpg" alt="background" id="background">
 
     <div class="center">
-        <h1 id="fc">#Freecycle Movement</h1>
-        <p id="text">It's time to reuse, reduce and recycle</p>
+        <h1 id="fc">Welcome to The Freecycle Network</h1>
+        <p id="text">Changing the world one gift at a time</p>
         <div class="button-hub">
-            <button id="trigger-modal" class="register" >Register</button>
-            <button id="trigger-modal" class="learn-more" >Learn More</button>
+            <button id="trigger-modal" class="register" >Register Today</button>
+            <button id="trigger-modal" class="learn-more" >Learn More  &#8681;</button>
         </div>
         
 
@@ -48,15 +58,22 @@
         <!--About Us and Our mission-->
         <div id="about-us">
             <h2>About Us</h2>
+            <img src="about_us_image.jpg" alt="background" id="blank">
             <p>We are a grassroots & entirely nonprofit movement of people who are giving and getting stuff for free in their own Towns. It's all about reuse and keeping good stuff out of landfills. With our free membership anyone can also set up their own, smaller personal Friends Circle for gifting and lending of items.</p>
-            <p style = "color: #B44C43;">Read more > </p>
+            <!-- <p style = "color: #246100;">Read more > </p> -->
         </div>
     
         <div id="our-mission">
             <h2>Our Mission</h2>
+            <img src="recycle_img.png" alt="background" id="blank">
             <p>Our mission is to build a worldwide sharing movement that reduces waste, saves precious resources, and eases the burden on our landfills. We want to enable our members to benefit from the strength of a larger community and contribute to a more sustainable future. </p>
-            <p style = "color: #B44C43;">Read more > </p>
+            <!-- <p style = "color: #246100;">Read more > </p> -->
         </div>
+    </div>
+
+    <div id="read-more-box" style="padding:2%" >
+        <a href="#about_more" style = "color: #246100; padding-right: 25%; padding-left: 25%; font-size: 35px;">Read more > </a>
+        <a href="#mission_more" style = "color: #246100;padding-left: 300px; font-size: 35px;" >Read more > </a>
     </div>
     
 
@@ -69,9 +86,18 @@
         <a href="facebook" target="_blank">
             <img src="Facebook.png" alt="Facebook" width="30" height="30">
         </a>
-        <a href="snapchat" target="_blank">
-            <img src="snapchat.png" alt="Snapchat" width="30" height="30">
+        <a href="linkedin" target="_blank">
+            <img src="linkedin.png" alt="Snapchat" width="30" height="30">
         </a>
+        <div id="additional">
+            <a href="#contactus">Contact Us</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#tos">Terms of Service</a>
+            <a href="#careers">Careers</a>
+        </div>
+        
+
+        <!-- contact, privacy policy, terms of service, careers, -->
     </footer>
     
     <div id="myModal" class="modal">
