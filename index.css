@@ -178,8 +178,8 @@ body {
 
 
 .register:hover, .learn-more:hover {
-    color: #26252d;
-    background-color:#aaaaaa;
+    color: white;
+    background-color:#1A554D;
 }
 
 /*edit the text on background picture*/
@@ -187,7 +187,7 @@ body {
     margin: 0;
     position:absolute;
     top: 32%;
-    left: 30%;
+    left: 28%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
@@ -196,11 +196,13 @@ body {
 #fc {
     text-align: center;
     text-shadow: 3px 3px #497E76;
-    font-size: 70px;
+    font-size: 55px;
     color: white;
+    margin-bottom: 0%;
 }
 
 #text {
+    margin-top: 1%;
     text-align: center;
     text-shadow: 3px 3px #497E76;
     font-style: bold 20px;
@@ -337,7 +339,7 @@ input {
 }
 /* Footer styles */
 footer {
-    background-color: #333;
+    background-color: #1A554D;
     color: white;
     padding: 20px;
 
