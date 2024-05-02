@@ -10,7 +10,7 @@
 
 .custom-background-color {
     background-color: rgb(255, 255, 255);
-    color: #246100;
+    color: #497E76;
 }
 
 .header{
@@ -45,7 +45,7 @@ body {
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
-    color: #246100;
+    color: #497E76;
     text-align: center;
     padding: 25px 16px;
     text-decoration: none;
@@ -114,7 +114,7 @@ body {
 /* Style the links inside the navigation bar */
 .signin a {
     float: right;
-    color: #246100;
+    color: #497E76;
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
@@ -122,21 +122,21 @@ body {
 }
 
 .signin a.active {
-    background-color:#246100;
+    background-color:#497E76;
     color: white;
 }
 
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #246100;
+    background-color: #497E76;
     color: white;
 }
 
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    background-color:#246100;
+    background-color:#497E76;
     color: white;
 }
 
@@ -147,14 +147,14 @@ body {
     background: no-repeat center fixed;
     background-size: cover;
     width: 100%;
-    height: 80%;
+    height: 20%;
     opacity: 95%;
 }
 
 #home {
-    width: 100%;
-    height: 110vh;
-    background: url('background.jpg') no-repeat center fixed;
+    width: 20%;
+    height: 60vh;
+    background: url('cropped-back.JPG') no-repeat center fixed;
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@ body {
     padding-left: 40px;
     font-family: lato-regular;
     font-size: 30px;
-    background-color: #246100;
+    background-color: #497E76;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -179,14 +179,14 @@ body {
 
 .register:hover, .learn-more:hover {
     color: #26252d;
-    background-color: rgb(224, 255, 193);
+    background-color:#aaaaaa;
 }
 
 /*edit the text on background picture*/
 .center {
     margin: 0;
-    position: absolute;
-    top: 50%;
+    position:absolute;
+    top: 32%;
     left: 30%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -195,14 +195,14 @@ body {
 
 #fc {
     text-align: center;
-    text-shadow: 3px 3px #246100;
+    text-shadow: 3px 3px #497E76;
     font-size: 70px;
     color: white;
 }
 
 #text {
     text-align: center;
-    text-shadow: 3px 3px #246100;
+    text-shadow: 3px 3px #497E76;
     font-style: bold 20px;
     font-size: 40px;
     color: white;
@@ -220,15 +220,13 @@ p {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
-    padding-top: 30px;
-    padding-bottom: 100px;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: #B44C43;
+    background-color: #497E76;
     background-color: rgba(226, 246, 255, 0.4);
     
 }
@@ -243,11 +241,15 @@ p {
     border: 1px solid #888;
     width: 50%;
     margin: auto;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     padding-left: 50px;
     padding-right: 50px;
     
+}
+
+.modal-content label {
+    font-size: 20px;
 }
 
 
@@ -262,7 +264,7 @@ p {
 /* Change colour when hovered over */
 .close:hover,
 .close:focus {
-    color: red;
+    color: #497E76;
     text-decoration: none;
     cursor: pointer;
 }
@@ -298,13 +300,12 @@ input {
 
 #about-us, #our-mission {
     flex: 1;
-    padding: 20px;
     position: relative;
 }
 
 #about-us h2, #our-mission h2 {
-    font-size: 40px;
-    color: #246100;
+    font-size: 25px;
+    color: #497E76;
     font-family: lato-regular;
     text-align: center;
 }
@@ -312,10 +313,10 @@ input {
 #about-us p, #our-mission p {
     color: #555;
     line-height: 1.5;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
     display: block;
-    padding: 5%;
+    padding: 2%;
 }
 
 #read-more-box {
@@ -327,15 +328,12 @@ input {
 }
 
 #read-more-box p {
-    display: block;
+    display:flex;
     color: #555;
     line-height: 1.5;
-    font-size: 30px;
+    font-size: 20px;
     position:relative;
 
-
-    /* padding: 10%; */
-    /* float: left; */
 }
 /* Footer styles */
 footer {
@@ -345,18 +343,28 @@ footer {
 
 }
 
+.flex-container{
+    display: flex;
+}
+
+.flex-container > div {
+    margin: 10px;
+}
+
 footer h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
+    margin-top: 0%;
+    display: block;
+    font-size: 20px;
+
 }
 
 footer a {
-    font-size: 30px;
+    font-size: 20px;
     margin: 0 10px;
     text-decoration: none;
     color: white;
 }
 
 footer a:hover {
-    color: #246100;
+    color: #497E76;
 }
